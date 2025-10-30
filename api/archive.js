@@ -21,7 +21,7 @@ export default async function handler(req, res) {
     });
 
     const { access_token } = await tokenRes.json();
-    const playlistId = "YOUR_PLAYLIST_ID"; // 👈 replace with your playlist ID
+    const playlistId = "35iWgU5Ah270CPSMCcP4h4"; // 👈 replace with your playlist ID
 
     const playlistRes = await fetch(
       `https://api.spotify.com/v1/playlists/${playlistId}/tracks?limit=100`,
