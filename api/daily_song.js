@@ -22,7 +22,7 @@ export default async function handler(req, res) {
     const access_token = tokenData.access_token;
 
     // --- Step 2: Fetch playlist tracks ---
-    const playlistId = "35iWgU5Ah270CPSMCcP4h4?si=bc2e6f5f928a4ad6"; // e.g. 37i9dQZF1DXcBWIGoYBM5M
+    const playlistId = "35iWgU5Ah270CPSMCcP4h4"; // e.g. 37i9dQZF1DXcBWIGoYBM5M
     const playlistRes = await fetch(
       `https://api.spotify.com/v1/playlists/${playlistId}/tracks`,
       {
